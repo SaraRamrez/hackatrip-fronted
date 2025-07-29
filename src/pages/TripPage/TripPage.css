@@ -1,0 +1,50 @@
+.btn-editar, .btn-sube-post {
+    background-color: var(--Red);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.p-post {
+    margin-left: 5%;
+    margin-right: 5%; 
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.btn-sube-post {
+    margin-bottom: 20px;
+}
+/**** Estilos general para Tablet ****/
+@media screen and (min-width: 768px) {
+    .btn-editar, .btn-sube-post {
+        margin-left: 30%;
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/**** Estilos Orientación Horizontal en Tablet ****/
+@media screen and (min-width: 768px) and (orientation: landscape) {
+    .btn-editar, .btn-sube-post {
+        margin-left: 25%;
+        font-size: 15px;
+        padding: 9px 18px;
+    }
+}
+
+/**************** VERSIÓN PREDETERMINADA: Escritorio ***************/
+@media screen and (min-width: 1000px) {
+    .btn-editar, .btn-sube-post {
+        margin-left: 43%; /* O cualquier valor que consideres adecuado para escritorio */
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+

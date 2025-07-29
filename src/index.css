@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Turqoise: #80f4dc;
+  --Blue: #00c2ff;
+  --Red: #f44336;
+}
+
+main{
+position: relative;
+}
+
+div#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: 'Jomhuria', serif;
+  font-size: 80px;
+  font-weight: 200;
+  font-style: normal;
+}
+
+h2 {
+  font-family: 'Jomhuria', serif;
+  font-size: 60px;
+  font-weight: 200;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Martel Sans', sans-serif;
+  min-height: 100vh;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--Red);
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Martel Sans', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+button:hover {
+  background-color: #f43636;
+}
+
+/**** Estilos general para Tablet ****/
+
+@media screen and (min-width: 768px) {
+
+}
+
+/**** Estilos Orientación Horizontal en Tablet ****/
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+
+}
+
+/**************** VERSIÓN PREDETERMINADA: Escritorio ***************/
+
+@media screen and (min-width: 1000px) {
+
+}

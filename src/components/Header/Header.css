@@ -1,0 +1,203 @@
+/* Estilos generales para el contenedor principal */
+.header {
+  display: grid;
+  grid-template-areas: 
+    "logo nav"
+    "frase frase";
+  position: relative;
+  height: 60vh; /* Ajuste para dispositivos móviles */
+  max-height: 550px; /* Límite de altura para pantallas más grandes */
+  overflow: hidden; /* Asegura que la imagen no se desborde */
+}
+
+/* Estilos para la imagen de fondo */
+.imgheader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin deformarse */
+  object-position: center;
+  z-index: -1; /* Asegura que la imagen esté detrás de los otros elementos */
+}
+
+/* Estilos para el contenedor de navegación */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 20px; /* Ajuste de padding para dispositivos móviles */
+  z-index: 2; /* Asegura que el contenido de la navegación esté por encima de la foto de fondo */
+}
+
+/* Estilos para el logo */
+.logo1 {
+  max-width: 150px; /* Ajuste para dispositivos móviles */
+  margin-top: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Estilos para el menú de navegación */
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem; /* Ajuste para dispositivos móviles */
+  padding: 0;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.300);
+  border-radius: 10px;
+  z-index: 2; /* Asegura que el menú esté por encima de la foto de fondo */
+}
+
+.nav-menu li {
+  margin: 0 10px; /* Ajuste para dispositivos móviles */
+  position: relative; /* Necesario para submenús */
+  list-style: none;
+}
+
+.nav-menu li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.300);
+  border-radius: 10px;
+}
+
+.nav-menu li:hover > ul {
+  display: block;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 10px;
+  display: block;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.nav-menu a:hover {
+  font-weight: bolder;
+}
+
+/* Estilos para los enlaces adicionales */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Ajuste para dispositivos móviles */
+  
+  list-style: none;
+  z-index: 2; /* Asegura que los enlaces estén por encima de la foto de fondo */
+}
+
+.nav-links a, .nav-links button {
+  color: white;
+  text-decoration: none;
+  padding: 10px 10px; /* Ajuste para dispositivos móviles */
+  border: none;
+  cursor: pointer;
+  
+}
+
+.contenedorFrasePortada {
+  grid-area: frase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px; /* Ajuste para dispositivos móviles */
+  z-index: 2;
+  text-align: center;
+}
+
+/* Estilos para la frase de portada */
+.frasePortada {
+  font-size: 2rem; /* Ajuste para dispositivos móviles */
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);  
+}
+
+/* Estilos para tablet */
+@media screen and (min-width: 768px) {
+  .header {
+    height: 70vh; /* Ajuste para tablets */
+  }
+
+  .logo1 {
+    max-width: 200px; /* Ajuste para tablets */
+  }
+
+  .nav-menu {
+    font-size: 1.2rem; /* Ajuste para tablets */
+  }
+
+  .nav-menu li {
+    margin: 0 15px; /* Ajuste para tablets */
+  }
+
+  .nav-links {
+    gap: 15px; /* Ajuste para tablets */
+  }
+
+  .nav-links a, .nav-links button {
+    padding: 10px 15px; /* Ajuste para tablets */
+  }
+
+  .contenedorFrasePortada {
+    margin: 5% 10%; /* Ajuste para tablets */
+  }
+
+  .frasePortada {
+    font-size: 3rem; /* Ajuste para tablets */
+  }
+}
+
+/* Estilos para orientación horizontal en tablet */
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .header {
+    height: 75vh; /* Ajuste para tablets en modo horizontal */
+  }
+
+  .frasePortada {
+    font-size: 3.5rem; /* Ajuste para tablets en modo horizontal */
+  }
+}
+
+/* Estilos para escritorio */
+@media screen and (min-width: 1000px) {
+  .header {
+    height: 650px; /* Ajuste para escritorio */
+  }
+
+  .logo1 {
+    max-width: 300px; /* Ajuste para escritorio */
+  }
+
+  .nav-menu {
+    font-size: 1.3rem; /* Ajuste para escritorio */
+  }
+
+  .nav-menu li {
+    margin: 0 20px; /* Ajuste para escritorio */
+  }
+
+  .nav-links {
+    gap: 20px; /* Ajuste para escritorio */
+  }
+
+  .nav-links a, .nav-links button {
+    padding: 10px 20px; /* Ajuste para escritorio */
+  }
+
+  .contenedorFrasePortada {
+    margin: 10% 10%; /* Ajuste para escritorio */
+  }
+
+  .frasePortada {
+    font-size: 55px; /* Ajuste para escritorio */
+  }
+}
+

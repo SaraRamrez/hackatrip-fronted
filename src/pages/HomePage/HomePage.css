@@ -1,0 +1,25 @@
+.trip-item {
+  text-decoration: none;
+}
+
+.trip-list {
+  display: flex;
+  justify-content: center;
+}
+
+.ofertas {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.ofertas > img {
+  border-radius: 15px;
+  margin: 30px;
+  width: 70vw;
+  cursor: pointer;
+}
+
+.textoIdeas {
+  margin: 80px 100px 10px 100px;
+}

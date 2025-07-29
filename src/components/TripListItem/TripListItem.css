@@ -1,0 +1,18 @@
+  .ideas {
+    display: flex;
+    max-width: 70%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .botonFoto {
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+  }
+  
+  .trip-item img {
+
+    object-fit: cover;
+  }

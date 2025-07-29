@@ -1,0 +1,140 @@
+/* Estilos globales para prevenir desbordamiento horizontal */
+html, body {
+  overflow-x: hidden; /* Evita el desbordamiento horizontal */
+  width: 100%; /* Asegura que no haya desbordamiento debido a anchos excesivos */
+  margin: 0; /* Elimina márgenes que puedan causar desbordamiento */
+  padding: 0; /* Elimina paddings que puedan causar desbordamiento */
+}
+
+/* Estilos para CreateUpdateTripForm */
+.create-update-trip-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 80%; /* Ancho máximo del formulario */
+  margin: 0 auto; /* Centra el formulario */
+  box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
+}
+
+.create-update-trip-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.create-update-trip-form input[type='text'],
+.create-update-trip-form input[type='date'],
+.create-update-trip-form input[type='number'],
+.create-update-trip-form input[type='email'],
+.create-update-trip-form textarea,
+.create-update-trip-form select,
+.create-update-trip-form button {
+  width: 100%; /* Ancho completo del contenedor */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #f11111; /* Borde rojo */
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: block;
+  background-color: white;
+  color: black; /* Texto negro */
+}
+
+.boton-admin {
+  margin-top: 10px;
+  background-color: #00C2FF;
+  width: auto; /* Asegura que el botón no cause desbordamiento */
+  margin-left: 80%;
+}
+
+.boton-admin:hover {
+  background-color: #80F4DC;
+}
+
+.create-update-trip-form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0000001a;
+  box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
+  margin-bottom: 50px;
+}
+
+main.admin h1 {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+main.admin {
+  background-image: linear-gradient(#ffffff, #F44336);
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background-size: cover; /* Ajusta el tamaño de la imagen para que cubra toda la pantalla */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat;
+  overflow-x: hidden; /* Evita el desbordamiento horizontal */
+  width: 100%; /* Asegura que el contenedor principal no tenga un ancho mayor al viewport */
+  margin: 0; /* Elimina márgenes que puedan causar desbordamiento */
+  padding: 0; /* Elimina paddings que puedan causar desbordamiento */
+}
+
+/**** Estilos general para Tablet ****/
+
+@media screen and (min-width: 768px) {
+  .create-update-trip-form {
+    max-width: 70%;
+    padding: 30px;
+  }
+
+  .create-update-trip-form-container {
+    max-width: 600px;
+    padding: 30px;
+    margin-bottom: 50px;
+  }
+
+  .boton-admin {
+    margin-left: 70%;
+  }
+}
+
+/**** Estilos Orientación Horizontal en Tablet ****/
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .create-update-trip-form {
+    max-width: 60%;
+    padding: 40px;
+  }
+
+  .create-update-trip-form-container {
+    max-width: 700px;
+    padding: 40px;
+    margin-bottom: 50px;
+  }
+
+  .boton-admin {
+    margin-left: 60%;
+  }
+}
+
+/**************** VERSIÓN PREDETERMINADA: Escritorio ***************/
+
+@media screen and (min-width: 1000px) {
+  .create-update-trip-form {
+    max-width: 50%;
+    padding: 50px;
+  }
+
+  .create-update-trip-form-container {
+    max-width: 800px;
+    padding: 50px;
+    margin-bottom: 50px;
+  }
+
+  .boton-admin {
+    margin-left: 50%;
+  }
+}

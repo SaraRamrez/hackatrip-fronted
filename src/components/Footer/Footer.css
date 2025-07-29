@@ -1,0 +1,158 @@
+.footer {
+  background-color: black;
+  background-size: cover;
+  padding: 2% 5%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.footer__logo-container {
+  position: absolute;
+  top: 2%; /* Ajusta este valor según sea necesario */
+  left: 5%; /* Ajusta este valor según sea necesario */
+}
+
+.logo2 {
+  max-width: 15%; /* Ajusta el tamaño máximo del logo para que sea más pequeño */
+  height: auto;
+}
+
+.footer__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 2%; /* Ajusta este valor según sea necesario */
+}
+
+.footer__nav {
+  text-align: center;
+}
+
+.footer__nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 2% 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.footer__nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  flex: 1;
+  margin: 0 2%; /* Aumenta este margen para mayor separación */
+}
+
+.footer__nav-list > li {
+  position: relative;
+}
+
+.footer__nav-list > li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__nav-list > li a:hover {
+  text-decoration: underline;
+}
+
+.footer__destinations {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  color: white;
+  text-align: left;
+}
+
+.footer__destinations li {
+  display: block;
+  margin: 10px 0;
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+
+.footer__destinations li a {
+  color: var(--Red);
+  text-decoration: none;
+}
+
+.footer__destinations li a:hover {
+  text-decoration: underline;
+}
+
+.footer__contact p {
+  margin: 0.5em 0;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%; /* Ajusta este valor según sea necesario */
+}
+
+.footer__social a {
+  margin: 0 10px; /* Aumenta el margen entre los iconos de redes sociales */
+}
+
+.footer__social img {
+  width: 1.5em;
+}
+
+.footer__rights {
+  margin-top: 2%;
+  font-size: 0.9em;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 1200px) {
+  .footer__nav-list {
+    flex-wrap: wrap;
+  }
+
+  .footer__nav-item {
+    flex: 1 1 45%;
+    margin-bottom: 2%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__nav-item {
+    align-items: center;
+    text-align: center;
+    flex: 1 1 100%;
+    margin: 0;
+  }
+
+  .footer__destinations {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .footer__destinations li {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo2 {
+    max-width: 30%;
+  }
+
+  .footer__nav-item a {
+    font-size: 1em;
+  }
+}

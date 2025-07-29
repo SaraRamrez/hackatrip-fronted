@@ -1,0 +1,110 @@
+.coordinadores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coordinator-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #eeeeee;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coordinator-username, .coordinator-media {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.accept-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.accept-button:hover {
+    background-color: #45a049;
+}
+
+/**** Estilos generales para Tablet ****/
+
+@media screen and (min-width: 768px) {
+    .coordinator-card {
+        flex-direction: row;
+        padding: 20px;
+        margin: 30px;
+    }
+
+    .coordinator-username, .coordinator-media {
+        font-size: 18px;
+    }
+
+    .accept-button {
+        padding: 15px 25px;
+        font-size: 16px;
+    }
+}
+
+/**** Estilos para orientación horizontal en Tablet ****/
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+    .coordinator-card {
+        margin: 40px;
+        padding: 30px;
+    }
+
+    .coordinator-username, .coordinator-media {
+        font-size: 20px;
+    }
+
+    .accept-button {
+        padding: 20px 30px;
+        font-size: 18px;
+    }
+}
+
+/**************** VERSIÓN PREDETERMINADA: Escritorio ***************/
+
+@media screen and (min-width: 1000px) {
+    .coordinator-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        margin: 50px;
+        width: 30%;
+    }
+
+    .coordinator-image {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .coordinator-username, .coordinator-media {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .accept-button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    .accept-button:hover {
+        background-color: #45a049;
+    }
+}

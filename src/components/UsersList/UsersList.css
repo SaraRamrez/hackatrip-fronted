@@ -1,0 +1,97 @@
+.users {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.username, .email {
+    font-size: 16px;
+}
+
+.role-info {
+    font-size: 14px;
+    color: gray;
+}
+
+.promote-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.promote-button:hover {
+    background-color: #45a049;
+}
+
+/**** Estilos generales para Tablet ****/
+
+@media screen and (min-width: 768px) {
+    .user-card {
+        flex-direction: row;
+        padding: 20px;
+        margin: 30px;
+    }
+
+    .username, .email, .role-info {
+        font-size: 18px;
+    }
+
+    .promote-button {
+        padding: 15px 25px;
+        font-size: 16px;
+    }
+}
+
+/**** Estilos para orientación horizontal en Tablet ****/
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+    .user-card {
+        margin: 40px;
+        padding: 30px;
+    }
+
+    .username, .email, .role-info {
+        font-size: 20px;
+    }
+
+    .promote-button {
+        padding: 20px 30px;
+        font-size: 18px;
+    }
+}
+
+/**************** VERSIÓN PREDETERMINADA: Escritorio ***************/
+
+@media screen and (min-width: 1000px) {
+    .user-card {
+        flex-direction: row;
+        padding: 40px;
+        margin: 50px;
+        height: 200px;
+        width: 70%;
+    }
+
+    .username, .email, .role-info {
+        font-size: 22px;
+    }
+
+    .promote-button {
+        padding: 25px 35px;
+        font-size: 20px;
+    }
+}

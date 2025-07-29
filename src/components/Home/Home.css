@@ -1,0 +1,202 @@
+.saber-mas {
+  position: relative;
+  margin: 30px;
+  width: 90vw; /* Ajuste el ancho para móviles */
+  max-width: 70vw; /* Límite de ancho para pantallas más grandes */
+  margin-inline: auto;
+}
+
+.img-grande {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.img-pequeña {
+  position: absolute;
+  border-radius: 15px;
+  width: 50vw; /* Ajuste el ancho para móviles */
+  max-width: 240px; /* Límite de ancho para pantallas más grandes */
+  height: auto; /* Mantener la relación de aspecto */
+  margin-top: 200px;
+}
+
+.botonSaberMas {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15%;
+  background-image: linear-gradient(to right, var(--Turqoise), var(--Blue));
+  color: black;
+  box-shadow: none;
+  border: grey;
+  padding: 8px 15px;
+  font-size: 4vw; /* Ajuste el tamaño de fuente para móviles */
+}
+
+.botonSaberMas:hover {
+  background-image: var(--Red);
+}
+
+.comunity {
+  display: flex;
+  flex-direction: column;
+  background-color: #e7e7e7;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.comunity > p {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  align-items: center;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding: 0 0 40px 0;
+}
+
+.facebook, .instagram {
+  display: flex;
+  align-items: center;
+}
+
+.iconFacebook, .iconInstagram {
+  display: inline;
+  margin: 2px;
+  width: 20px;
+  height: auto;
+}
+
+.frases {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten a varias líneas si es necesario */
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.frases img {
+  width: 100%; /* Ajuste el ancho para móviles */
+  max-width: 309px; /* Límite de ancho para pantallas más grandes */
+  height: auto;
+  object-fit: cover;
+}
+
+.frase-container {
+  position: relative;
+  width: 100%;
+  max-width: 310px;
+  overflow: hidden;
+}
+
+.frase-container img {
+  height: 100%;
+  transition: filter 0.2s ease; /* Transición suave para el efecto de desenfoque */
+}
+
+.frase-container img:hover {
+  filter: blur(5px);
+}
+
+.frase-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+  
+}
+
+.tituloFrase,
+.textoFrase {
+  position: absolute;
+  color: white;
+  text-align: center;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 10px; /* Para agregar algo de espacio a los lados */
+}
+
+.tituloFrase {
+  top: 8%;
+  font-size: 6vw; /* Ajuste el tamaño de fuente para móviles */
+  
+}
+
+.textoFrase {
+  top: 25%;
+  font-size: 3vw; /* Ajuste el tamaño de fuente para móviles */
+  
+}
+
+.textoProximos {
+  margin: 30px 20px 10px 20px; /* Ajuste el margen para móviles */
+  
+}
+
+/**** Estilos general para Tablet ****/
+@media screen and (min-width: 768px) {
+  .botonSaberMas {
+    font-size: 1vw; /* Ajuste el tamaño de fuente para tablets */
+  }
+
+  .tituloFrase {
+    font-size: 4vw; /* Ajuste el tamaño de fuente para tablets */
+  }
+
+  .textoFrase {
+    font-size: 1rem; /* Ajuste el tamaño de fuente para tablets */
+  }
+}
+
+/**** Estilos Orientación Horizontal en Tablet ****/
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  h1 {
+    font-size: 56px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .gif-container p {
+    font-size: 16px;
+  }
+}
+
+/**************** VERSIÓN PREDETERMINADA: Escritorio ***************/
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 80px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .gif-container p {
+    font-size: 16px;
+  }
+
+  .botonSaberMas {
+    font-size: 1.4vw;
+  }
+
+  .tituloFrase {
+    font-size: 3rem;
+  }
+
+  .textoFrase {
+    font-size: 1.2rem;
+  }
+
+  .textProximos {
+    margin: 30px 100px 10px 100px;
+  }
+}
+

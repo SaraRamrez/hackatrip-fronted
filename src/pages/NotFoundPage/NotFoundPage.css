@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.notFound {
+  font-style: normal;
+  color: var(--Red);
+}
+
+#pNotFound {
+  font-size: 16px;
+}
+
+.not-found-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.gif-container {
+  margin-top: 30px;
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gif-container::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+  background-image: url("https://i.gifer.com/60s.gif");
+  background-size: cover;
+}
+
+.gif-container p {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+#enlaceNotFound {
+  text-decoration: none;
+  color: var(--Turqoise);
+}
+
+/**** Estilos general para Tablet ****/
+
+@media screen and (min-width: 768px) {
+  .NotFound {
+    font-size: 48px; 
+  }
+
+  #pNotFound {
+    font-size: 18px; 
+  }
+
+  .gif-container p {
+    font-size: 14px; 
+  }
+}
+
+/**** Estilos Orientación Horizontal en Tablet ****/
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .NotFound {
+    font-size: 48px; 
+  }
+
+  #pNotFound {
+    font-size: 18px; 
+  }
+
+  .gif-container p {
+    font-size: 16px;
+  }
+}
+
+/**************** VERSIÓN PREDETERMINADA: Escritorio ***************/
+
+@media screen and (min-width: 1000px) {
+  .NotFound {
+    font-size: 48px; 
+  }
+
+  #pNotFound {
+    font-size: 18px; 
+  }
+
+  .gif-container p {
+    font-size: 16px;
+  }
+}
